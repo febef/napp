@@ -1,2 +1,2 @@
 # napp
-ore modular app.
+Core modular app.
