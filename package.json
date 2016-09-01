@@ -1,0 +1,22 @@
+{
+  "name": "napp",
+  "description": "Node.js nucleo de applicacion modular",
+  "version": "0.0.1",
+  "author": "febef <febef.dev@gmail.com>",
+  "maintainers": [
+    "febef"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://"
+  },
+  "keywords": [
+    "app",
+    "modular"
+  ],
+  "main": "./lib/napp.js",
+  "license": "BSD-3",
+  "engines": {
+    "node": ">= 10.6"
+  }
+}
