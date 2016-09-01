@@ -1,0 +1,2 @@
+# napp
+Core modular app.
