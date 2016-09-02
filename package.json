@@ -8,14 +8,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://"
+    "url": "https://github.com/febef/napp.git"
   },
   "keywords": [
     "app",
     "modular"
   ],
   "main": "./lib/napp.js",
-  "license": "BSD-3",
   "engines": {
     "node": ">= 10.6"
   }
