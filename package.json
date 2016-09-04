@@ -1,6 +1,6 @@
 {
-  "name": "napp",
-  "description": "Node.js nucleo de applicacion modular",
+  "name": "n-app",
+  "description": "Node.js core of modular application",
   "version": "0.0.1",
   "author": "febef <febef.dev@gmail.com>",
   "maintainers": [
