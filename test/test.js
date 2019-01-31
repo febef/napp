@@ -1,7 +1,7 @@
 
 var napp = require("../lib/napp.js");
 var config = {
-  componentsPath: __dirname + "/testcomp",
+  componentsPath: "testcomp",
   log: true
 };
 
