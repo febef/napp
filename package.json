@@ -1,7 +1,7 @@
 {
   "name": "n-app",
   "description": "Node.js core of modular application",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "febef <febef.dev@gmail.com>",
   "maintainers": [
     "febef"
