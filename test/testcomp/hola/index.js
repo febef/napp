@@ -2,12 +2,14 @@
 
 class Hola {
   constructor() {
-    this.dependencies = [];
+    this.dependencies = ['listcomp'];
     this.subordinantes = [];
   }
 
-  run() {
+  run(napp) {
     this.log("hola");
+    napp.reload("chau");
+
   }
 
   stop() {

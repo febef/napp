@@ -1,4 +1,4 @@
-
+debugger; 
 const nApp = require('../lib/napp.js');
 
 const config = {
