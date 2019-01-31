@@ -1,10 +1,11 @@
 
-var napp = require("../lib/napp.js");
-var config = {
+const nApp = require('../lib/napp.js');
+
+const config = {
   componentsPath: "testcomp",
   log: true
 };
 
-var app  = new napp(config);
+const app = new nApp(config);
 
 app.run();

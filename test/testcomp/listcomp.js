@@ -1,18 +1,17 @@
 
+class ListComp {
+  constructor() {
+    this.dependencies = [];
+    this.subordinantes = [];
+  }
 
+  run(napp) {
+    this.log("\n",JSON.stringify(napp.components),"\n");
+  }
 
-
-var run = function(napp){
-  console.log("\n",JSON.stringify(napp.components),"\n");
+  stop() {
+    this.log("chau\n");
+  }
 };
 
-var stop = function () {
-  console.log("chau\n");
-};
-
-module.exports = {
-  run: run,
-  stop: stop,
-  dependencies: [],
-  subordinantes: []
-};
+module.exports = new ListComp();

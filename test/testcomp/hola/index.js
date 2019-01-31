@@ -1,18 +1,18 @@
 
 
+class Hola {
+  constructor() {
+    this.dependencies = [];
+    this.subordinantes = [];
+  }
 
+  run() {
+    this.log("hola");
+  }
 
-var run = function(){
-  console.log("hola\n");
+  stop() {
+    this.log("chauuuuu chicha!");
+  }
 };
 
-var stop = function () {
-  console.log("chauuuuu chicha!\n");
-};
-
-module.exports = {
-  run: run,
-  stop: stop,
-  dependencies: [],
-  subordinantes: []
-};
+module.exports = new Hola();

@@ -1,20 +1,19 @@
 
+class Chau {
+  constructor() {
+    this.dependencies = ["hola", "listcomp"],
+    this.subordinantes = []
+  }
 
+  run(napp) {
+    this.log("chau");
 
+    napp.stop("hola");
+  }
 
-var run = function(napp){
-  console.log("chau\n");
-
-  napp.stop("hola");
+  stop() {
+    this.log("chau");
+  };
 };
 
-var stop = function () {
-  console.log("chau\n");
-};
-
-module.exports = {
-  run: run,
-  stop: stop,
-  dependencies: ["hola", "listcomp"],
-  subordinantes: []
-};
+module.exports = new Chau();
