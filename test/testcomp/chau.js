@@ -1,18 +1,18 @@
 
-class Chau {
-  constructor() {
-    this.dependencies = ["listcomp"],
-    this.subordinantes = []
+const { nappComponent } = require('../../lib/napp');
+
+class Chau extends nappComponent {
+
+  constructor(n) {
+    super(n);
+    this.dependencies = ["listcomp"];
   }
 
-  run(napp) {
-    this.log("chau");
-    napp.stop("hola");
+  run() {
+    super.run();
+    this.log("start chau");
+    this.n().stop("hola");
   }
-
-  stop() {
-    this.log("chau");
-  };
 };
 
-module.exports = new Chau();
+module.exports = Chau;

@@ -1,20 +1,18 @@
 
+const { nappComponent } = require('../../../lib/napp');
 
-class Hola {
-  constructor() {
-    this.dependencies = ['listcomp'];
-    this.subordinantes = [];
-  }
+class Hola extends nappComponent {
 
-  run(napp) {
+  run() {
     this.log("hola");
-    napp.reload("chau");
-
+    this.n().reload("chau");
+    this.runing = true;
   }
 
   stop() {
     this.log("chauuuuu chicha!");
+    this.runing = false;
   }
 };
 
-module.exports = new Hola();
+module.exports = Hola;

@@ -1,17 +1,18 @@
 
-class ListComp {
-  constructor() {
-    this.dependencies = [];
-    this.subordinantes = [];
+const { nappComponent } = require('../../lib/napp');
+
+class ListComp extends nappComponent {
+
+  constructor(n) {
+    super(n);
+    this.dependencies.push('hola');
   }
 
-  run(napp) {
-    this.log("\n",JSON.stringify(napp.components),"\n");
+  run() {
+    super.run();
+    this.log(JSON.stringify(this.n().components));
   }
 
-  stop() {
-    this.log("chau\n");
-  }
 };
 
-module.exports = new ListComp();
+module.exports = ListComp;
