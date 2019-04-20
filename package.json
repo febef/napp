@@ -17,5 +17,8 @@
   "main": "./lib/napp.js",
   "engines": {
     "node": ">=5.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
   }
 }
